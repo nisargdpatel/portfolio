@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from '../project';
+import { PROJECTS } from '../projects_list';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,66 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  projects = PROJECTS;
+  // projects = PROJECTS;
+  projects: Project[];
   temp = "assets/project_logo.jpg";
-  constructor() { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
+    this.getProjects();
   }
 
+  getProjects(): void {
+    this.projectService.getProjects().subscribe(projects => this.projects = projects);
+  }
 }
 
 
-export const PROJECTS: Project[] = [
-  {
-    name: "Connect 4",
-    description: "...description...",
-    date: "...date...",
-    status: "Complete",
-    imgsrc: "assets/connect4.PNG"
-  },
-  {
-    name: "Project 2",
-    description: "...description...",
-    date: "...date...",
-    status: "Complete",
-    imgsrc: "assets/project_logo.jpg"
-  },
-  {
-    name: "Project 3",
-    description: "...description...",
-    date: "...date...",
-    status: "Complete",
-    imgsrc: "#"
-  },
-  {
-    name: "Project 4",
-    description: "...description...",
-    date: "...date...",
-    status: "Complete",
-    imgsrc: "#"
-  },
-  {
-    name: "Project 5",
-    description: "...description...",
-    date: "...date...",
-    status: "Complete",
-    imgsrc: "#"
-  },
-  {
-    name: "Project 6",
-    description: "...description...",
-    date: "...date...",
-    status: "Complete",
-    imgsrc: "#"
-  }
-]
 
 
-export class Project {
-  public name: string;
-  public description: string;
-  public date: string;
-  public status: string;
-  public imgsrc: string;
-}

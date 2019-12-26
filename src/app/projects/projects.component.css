@@ -1,13 +1,30 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: lightskyblue;
+  font-family: Consolas, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+    background-color: lightskyblue;
+}
+
+.button-left {
+    float: left; 
+    margin-left: 4%; 
+    margin-top: 30%;
+}
+
+.button-right {
+    float: right; 
+    margin-right: 4%; 
+    margin-top: 30%;
 }
 
 
 .flip-card {
   background-color: transparent;
   width: 280px;
-  height: 250px;
+  height: 280px;
   perspective: 1000px;
   padding: 2%;
   position: relative;
@@ -35,7 +52,7 @@ body {
 }
 
 .flip-card-front {
-  background-color: lightseagreen;
+  background-color: green;
   color: black;
 }
 
@@ -43,4 +60,10 @@ body {
   background-color: lightseagreen;
   color: black;
   transform: rotateY(180deg);
+}
+
+img {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
