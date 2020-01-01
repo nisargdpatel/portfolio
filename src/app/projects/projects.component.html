@@ -19,11 +19,15 @@
 
                     </div>
                     <div class="flip-card-back">
-                        <h3>{{project.name}}</h3>
-                        <p>{{project.description}}</p>
-                        <p>{{project.date}}</p>
-                        <a routerLink="/detail/{{project.id}}" ><button (click)="onSelect(project)" style="float: left; margin-left: 4%; margin-top: 30%;">Detail</button></a>
-                        <a href="{{project.source}}" target="_blank"><button style="float: right; margin-right: 4%; margin-top: 30%;">Source</button></a>
+                        <a routerLink="/detail/{{project.id}}" ><button (click)="onSelect(project)" class="button-left">Detail</button></a>
+                        <a href="{{project.source}}" target="_blank"><button class="button-right">Source</button></a>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <p style="color: blue;">{{project.date}}</p>
+                        <hr>
+                        <p>{{project.intro}}</p>
                     </div>
                 </div>
             </div>

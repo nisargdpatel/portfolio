@@ -13,7 +13,7 @@ button {
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  font-family: Consolas, Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
 button:hover {
