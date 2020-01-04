@@ -7,6 +7,8 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     AchievementsComponent,
     ProjectsComponent,
     NavbarComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

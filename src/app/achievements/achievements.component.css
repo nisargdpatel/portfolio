@@ -2,6 +2,21 @@ li {
     list-style: none;
 }
 
+img {
+  height: 400px;
+}
+
 body {
-    font-family: Consolas, Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: auto !important;
+  height: 100%;
+  background-color: skyblue;
+  background-image: url("achievements_background.jpg");
+
+  
+  background-repeat: no-repeat, repeat;
+  height: 1000px;
+  background-size: cover;
 }

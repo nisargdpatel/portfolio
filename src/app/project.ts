@@ -7,5 +7,5 @@ export class Project {
     public status: string;
     public imgsrc: string;
     public source: string;
-    // public images: string[];
+    public images: string[];
 }
