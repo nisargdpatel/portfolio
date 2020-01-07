@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { SlideshowModule } from 'ng-simple-slideshow';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HomepageComponent } from './homepage/homepage.component';
     ProjectsComponent,
     NavbarComponent,
     ProjectDetailComponent,
-    HomepageComponent
+    HomepageComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
