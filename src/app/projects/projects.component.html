@@ -6,7 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
     <div class="row">
-        <div *ngFor="let project of projects" style="padding: 2%;" [class.selected]="project === selectedProject">
+        <div *ngFor="let project of projects" style="padding: 2%;">
             <div class="flip-card" style="padding: 2%;">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -19,7 +19,7 @@
 
                     </div>
                     <div class="flip-card-back">
-                        <a routerLink="/detail/{{project.id}}" ><button (click)="onSelect(project)" class="button-left">Detail</button></a>
+                        <a routerLink="/detail/{{project.id}}" ><button class="button-left">Detail</button></a>
                         <a href="{{project.source}}" target="_blank"><button class="button-right">Source</button></a>
                         <br>
                         <br>
