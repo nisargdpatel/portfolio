@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
         date: "Completed on 17 December, 2019",
         status: "Complete",
         imgsrc: "assets/brains.jpg",
-        source: "https://github.com/nisargdpatel",
+        source: "https://bitbucket.org/gjlynch/brains-data-pirates/src/master/",
         images: String[0] = []
     },
     {
