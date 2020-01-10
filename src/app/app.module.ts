@@ -31,12 +31,16 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule,
 <<<<<<< HEAD
+<<<<<<< HEAD
     SlideshowModule,
     BrowserAnimationsModule,
     MatSliderModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     FormsModule
+=======
+    SlideshowModule
+>>>>>>> parent of 95482b4... Added Brains source
 =======
     SlideshowModule
 >>>>>>> parent of 95482b4... Added Brains source
