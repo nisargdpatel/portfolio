@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "portfolio-nisarg",
+    "public": "dist/my-portfolio-website",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
