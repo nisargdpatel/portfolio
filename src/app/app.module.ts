@@ -15,8 +15,7 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +30,16 @@ import { MatSliderModule } from '@angular/material/slider';
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     SlideshowModule,
     BrowserAnimationsModule,
     MatSliderModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     FormsModule
+=======
+    SlideshowModule
+>>>>>>> parent of 95482b4... Added Brains source
   ],
   providers: [],
   bootstrap: [AppComponent]
